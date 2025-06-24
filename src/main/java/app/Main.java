@@ -7,11 +7,18 @@ public class Main {
         return kgs * CONV_V;
     }
 
+    private static double convPoundsToKgs(double pounds) {
+        return pounds / CONV_V;
+    }
+
     public static void main(String[] args) {
         System.out.println("App for converting measures");
+        System.out.println("Version 1.0");
 
         double kgs = 5;
+        double pnds = 15;
         double pounds = convKgsToPounds(kgs);
-        System.out.println("Pounds: " + pounds);
+        double kilos = convPoundsToKgs(pnds);
+        System.out.println("Pounds: " + pounds + " pounds\nKilos: " + kilos + " kilos");
     }
 }
